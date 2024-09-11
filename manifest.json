@@ -1,13 +1,18 @@
 {
-  "manifest_version":2,
-  "version":"1.0",
-  "name":"F#CK-Moodle-Downloads",
-  "content_scripts":[
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Remove Moodle ForceDownloads",
+  "content_scripts": [
     {
       "matches": [
-        "*://*/*"
+        "https://*/mod*"
       ],
-      "js":["main.js"]
+      "js": [
+        "main.js"
+      ]
     }
-  ]
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
 }
