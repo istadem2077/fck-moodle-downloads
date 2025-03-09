@@ -1,12 +1,12 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "version": "1.0",
   "name": "Remove Moodle ForceDownloads",
   "description": "A script that removes \"forcedownload\" from pdf-urls in moodle so that they don't have to be downloaded all the time.",
   "content_scripts": [
     {
       "matches": [
-        "https://*/mod*"
+	      "<all_urls>"
       ],
       "js": [
         "main.js"
